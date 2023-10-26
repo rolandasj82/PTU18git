@@ -9,10 +9,9 @@ registravimas ir išsaugojimas tekstiniais stringais į listą, pasirinkus išei
 atspausdinami.
 """
 
-
 # Užduotis - skaičiuotuvas
 # Apsirašome funkcijas
-
+istorija = []
 while True:
     print()
     print("SKAIČIUOTUVO KONSOLĖ\n"
@@ -28,3 +27,24 @@ while True:
     if operacija == "q":
         print("Ate Ate...")
         break
+    elif not operacija.isdigit():
+        print("Netinkama įvestis. Turi būti skaičius")
+        continue
+    elif int(operacija) > 4 or int(operacija) == 0:
+        print("Tokio pasirinkimo nėra!")
+        continue
+    varA = input("Įveskite pirmo kintamojo A vertę:")
+    varB = input("Įveskite antro kintamojo B vertę:")
+    # Patikrinimas
+
+    if not varA.isdigit() or not varB.isdigit():
+        print("Kintamieji A ir B turi būti skaičiai!!!")
+        continue
+
+    # Operaciju vykdymas
+    varA = int(varA)
+    varB = int(varB)
+    if operacija == "1":
+        ats = varA + varB
+        print(f"A+B={ats}")
+        istorija.append(f"A+B={ats}")
