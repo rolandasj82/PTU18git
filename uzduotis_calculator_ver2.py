@@ -10,7 +10,6 @@ atspausdinami.
 """
 
 # Užduotis - skaičiuotuvas
-# Apsirašome funkcijas
 istorija = []
 while True:
     print()
@@ -60,5 +59,3 @@ while True:
         ats = varA / varB
         print(f"A/B={ats}")
         istorija.append(f"A/B={ats}")
-print("Jūs atlikote šias operacijas:")
-print(istorija)
