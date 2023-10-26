@@ -48,3 +48,7 @@ while True:
         ats = varA + varB
         print(f"A+B={ats}")
         istorija.append(f"A+B={ats}")
+    elif operacija == "2":
+        ats = varA - varB
+        print(f"A-B={ats}")
+        istorija.append(f"A-B={ats}")
