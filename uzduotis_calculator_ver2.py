@@ -56,3 +56,9 @@ while True:
         ats = varA * varB
         print(f"A*B={ats}")
         istorija.append(f"A*B={ats}")
+    elif operacija == "4":
+        ats = varA / varB
+        print(f"A/B={ats}")
+        istorija.append(f"A/B={ats}")
+print("Jūs atlikote šias operacijas:")
+print(istorija)
