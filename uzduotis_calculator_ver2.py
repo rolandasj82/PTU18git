@@ -36,10 +36,6 @@ while True:
     varB = input("Įveskite antro kintamojo B vertę:")
     # Patikrinimas
 
-    if not varA.isdigit() or not varB.isdigit():
-        print("Kintamieji A ir B turi būti skaičiai!!!")
-        continue
-
     # Operaciju vykdymas
     varA = int(varA)
     varB = int(varB)
